@@ -1,7 +1,7 @@
 <?php
 // RageEx regular expression CTF - By Eldar "Wireghoul" Marcussen 
 //Validate input
-$safe = preg_replace('/[^A-z,*]/','', $_GET['columns']);
+$safe = preg_replace('/[^A-z,* ]/','', $_GET['columns']);
 echo "$safe\n";
 
 $db = mysqli_connect("localhost","root","toor","mydb");
